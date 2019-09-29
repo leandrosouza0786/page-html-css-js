@@ -207,6 +207,25 @@ main .blog-content .blog-title span{
     color: #82979b;
 }
 
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.pre-style{
+    color: var(--text-gray) !important;
+    background: transparent !important;
+    font-size: 2rem !important;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent !important;
+    color: var(--midnight) !important;
+}
+
 
 
 /* viewport 750px */

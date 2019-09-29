@@ -7,8 +7,7 @@ html, body{
 
 /* */
 :root{
-    --Abel: 'Abel', cursive;
-
+    --Abel: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* Colors */
     --text-gray: #3f4954;
     --text-light: #686666da;
@@ -128,6 +127,10 @@ h3{
     color: #a1c4cf;
 }
 
+.text-gray{
+    color: var(--text-gray);
+}
+
 
 /* Main Content */
 
@@ -225,6 +228,25 @@ section .container .owl-nav{
     background: transparent !important;
     color: var(--midnight) !important;
 }
+
+/* Site Content */
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+main .site-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main .site-content .post-content > .post-image .post
+
 
 
 

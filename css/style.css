@@ -1,0 +1,230 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* */
+:root{
+    --Abel: 'Abel', cursive;
+
+    /* Colors */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #fff;
+    --midnight: #104f55;
+    
+    /* gradient */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+/* ------------------ Global Classes -------------*/
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+.container{
+    margin: 0 5vh;
+}
+/* ------------------ navbar -------------*/
+
+.nav{
+    background: #fff;
+    padding: 0 2rem;
+    height: 4.5rem;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collpase{
+    position: absolute;
+    top: 26px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collpase.toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collpase .toggle-icons{
+    font-size: 1.4rem;  
+    color: var(--text-gray);          
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+
+}
+.nav .nav-items .nav-link a{
+    color: var(--text-gray);
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white)
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Abel);
+    color: var(--text-gray);
+}
+
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+
+.nav .social i{
+    padding: 0.2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+
+
+/* Main Content */
+
+main .site-title{
+    background-image: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1, h3{
+    margin: 2rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Abel);
+}
+
+main .site-title .btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Blog Section */
+
+main .blog{
+    background: url('../assets/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 67%;
+}
+
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgb(0, 0, 0, 0.2)
+}
+
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+}
+
+main .blog-content .blog-title span{
+    display: block;
+    color: #82979b;
+}
+
+
+
+/* viewport 750px */
+
+@media (max-width: 750px){
+    .nav .nav-menu{
+       flex-direction: column;
+    }
+    .nav .nav-menu .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collpase{
+        display: initial;
+    }
+    .nav .social{
+        justify-content: center;
+        width: 100%;
+        align-content: center;
+        display: flex;
+    }
+}

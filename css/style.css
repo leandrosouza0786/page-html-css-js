@@ -45,6 +45,12 @@ h3{
 .container{
     margin: 0 5vh;
 }
+
+p{
+    color: var(--text-gray);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 /* ------------------ navbar -------------*/
 
 .nav{
@@ -245,10 +251,55 @@ main .site-content .post-content > .post-image, .post-title{
     position: relative;
 }
 
-main .site-content .post-content > .post-image .post
+main .site-content .post-content > .post-image .post-info{
+        background: var(--sky);
+        padding: 1rem;
+        position: absolute;
+        bottom: 0%;
+        left: 20vw;
+        border-radius: 3rem;
+}
 
+main .site-content .post-content > .post-image > div{
+    overflow: hidden;
+}
 
+main .site-content .post-content > .post-image div img{
+    width: 100%;
+    transition: all 1s ease;
+}
 
+main .site-content .post-content > .post-image div img:hover{
+    transform: scale(1.3);
+}
+
+main .site-content .post-content > .post-image .post-info span{
+    margin: 0.5rem;
+}
+
+main .post-content .post-title a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .7rem 1.4rem;
+    background: var(--sky);
+}
+
+.site-content .pagination{
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem;
+    border-radius: 2rem;
+    margin: 0.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* viewport 750px */
 
